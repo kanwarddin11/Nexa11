@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ meta.title }}</title>
+    <meta name="description" content="{{ meta.description }}">
+    <meta name="keywords" content="{{ meta.keywords }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-white font-sans">
+    <nav class="p-6 border-b border-yellow-500/30 flex justify-between bg-black/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="text-3xl font-black text-yellow-400 tracking-tighter">NeXA <span class="text-white">TRUTH</span></div>
+        <div class="space-x-8 font-bold uppercase text-sm tracking-widest pt-2">
+            <a href="#" class="hover:text-yellow-400">Features</a>
+            <a href="/admin" class="bg-yellow-500 text-black px-4 py-2 rounded-full hover:bg-white transition">Admin</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-20 text-center">
+        <h1 class="text-6xl font-extrabold mb-6 leading-tight">Instant AI <span class="text-yellow-400 underline">Verification</span></h1>
+        <p class="text-slate-400 text-xl mb-12 max-w-2xl mx-auto">Paste any news link or text. Our AI Engine scans the global web to give you the truth in seconds.</p>
+
+        <div class="max-w-4xl mx-auto bg-white/5 p-8 rounded-[40px] border border-white/10 shadow-2xl backdrop-blur-xl">
+            <textarea id="userInput" class="w-full bg-transparent border-2 border-slate-700 rounded-3xl p-6 text-xl text-white focus:border-yellow-400 transition outline-none h-48" placeholder="Paste link or news text here..."></textarea>
+            
+            <button onclick="processData()" class="w-full mt-6 bg-yellow-400 hover:bg-yellow-300 text-black font-black py-5 rounded-3xl text-2xl shadow-[0_0_30px_rgba(250,204,21,0.3)] transition-all">
+                ANALYZE INTEL <i class="fa-solid fa-microchip ml-2"></i>
+            </button>
+        </div>
+
+        <div id="resultBox" class="hidden mt-16 animate-pulse">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-yellow-500 text-black p-8 rounded-3xl">
+                    <h3 class="font-bold text-sm uppercase">Trust Score</h3>
+                    <p id="score" class="text-6xl font-black mt-2">0%</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/10">
+                    <h3 class="font-bold text-sm uppercase text-yellow-400">Verdict</h3>
+                    <p id="verdict" class="text-4xl font-bold mt-2">--</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/10">
+                    <h3 class="font-bold text-sm uppercase text-yellow-400">Source Origin</h3>
+                    <p id="origin" class="text-2xl font-bold mt-2">--</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function processData() {
+            const input = document.getElementById('userInput').value;
+            const resBox = document.getElementById('resultBox');
+            
+            const response = await fetch('/api/verify', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({input_data: input})
+            });
+            const data = await response.json();
+            
+            document.getElementById('score').innerText = data.trust_score + "%";
+            document.getElementById('verdict').innerText = data.verdict;
+            document.getElementById('origin').innerText = data.origin_source;
+            resBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

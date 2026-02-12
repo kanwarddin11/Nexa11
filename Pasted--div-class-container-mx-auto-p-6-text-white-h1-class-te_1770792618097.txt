@@ -1,0 +1,28 @@
+<div class="container mx-auto p-6 text-white">
+    <h1 class="text-4xl font-black mb-10 text-yellow-400">COMMAND CENTER <span class="text-white">| NeXA 11 AI</span></h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white/5 border border-yellow-500/30 p-8 rounded-[30px] backdrop-blur-md">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Google Gemini API</h3>
+                <div class="h-3 w-3 bg-green-500 rounded-full animate-ping"></div>
+            </div>
+            <input type="password" id="geminiKey" placeholder="Enter Gemini Pro Key" class="w-full bg-black/40 border border-white/10 p-4 rounded-xl mb-4 outline-none focus:border-yellow-400">
+            <button onclick="saveConfig('Gemini')" class="w-full bg-yellow-400 text-black font-black py-3 rounded-xl hover:bg-white transition">CONNECT ENGINE</button>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 p-8 rounded-[30px] opacity-60">
+            <h3 class="text-2xl font-bold mb-6">OpenAI GPT-4o</h3>
+            <input type="password" id="openaiKey" placeholder="Enter OpenAI Key" class="w-full bg-black/40 border border-white/10 p-4 rounded-xl mb-4 outline-none">
+            <button class="w-full bg-white/10 text-white font-bold py-3 rounded-xl cursor-not-allowed">STANDBY MODE</button>
+        </div>
+    </div>
+
+    <div class="bg-white/5 border border-white/10 p-8 rounded-[30px]">
+        <h3 class="text-2xl font-bold mb-6 text-yellow-400">Legal & Policy Framework</h3>
+        <textarea id="policyText" class="w-full bg-black/40 border border-white/10 p-6 rounded-2xl h-64 text-slate-300 outline-none focus:border-yellow-400" placeholder="Write your Privacy Policy and Terms of Service here...">
+Our Privacy Policy ensures that user data is never stored. NeXA Truth Engine follows International Data Protection Standards (GDPR). All verifications are processed via encrypted AI channels...
+        </textarea>
+        <button onclick="savePolicy()" class="mt-6 bg-yellow-400 text-black font-black px-10 py-4 rounded-2xl hover:bg-white transition">UPDATE POLICY PAGE</button>
+    </div>
+</div>

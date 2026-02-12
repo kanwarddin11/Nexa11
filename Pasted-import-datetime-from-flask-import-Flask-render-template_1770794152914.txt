@@ -1,0 +1,66 @@
+import datetime
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
+
+app = Flask(__name__)
+app.secret_key = "nexa_11_visionary_2026"
+
+# --- GLOBAL SYSTEM CONTROL (Admin Managed) ---
+SYSTEM_STATUS = {
+    "news_engine": True,    # News Router Switch
+    "tool_auditor": True,   # Tool Auditor Switch
+    "active_api": "Gemini Pro",
+    "paywall": False
+}
+
+# SECURITY FLOOR
+ADMIN_PASS = "NeXA786"
+
+@app.route('/')
+def home():
+    return render_template('index.html', status=SYSTEM_STATUS)
+
+@app.route('/admin')
+def admin():
+    if not session.get('logged_in'): return redirect('/login')
+    return render_template('admin.html', status=SYSTEM_STATUS)
+
+# --- ROUTER 1: NEWS VERIFICATION ---
+@app.route('/api/verify-news', methods=['POST'])
+def verify_news():
+    if not SYSTEM_STATUS["news_engine"]:
+        return jsonify({"error": "News Engine is currently offline by Admin."})
+    
+    data = request.json
+    # AI Logic here
+    return jsonify({
+        "verdict": "Verified Authentic",
+        "score": 98,
+        "source": "Global News Database",
+        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d")
+    })
+
+# --- ROUTER 2: AI TOOL AUDITOR ---
+@app.route('/api/audit-tool', methods=['POST'])
+def audit_tool():
+    if not SYSTEM_STATUS["tool_auditor"]:
+        return jsonify({"error": "Tool Auditor is currently offline."})
+    
+    data = request.json
+    # Scraping & AI Audit Logic
+    return jsonify({
+        "safety_rating": "A+",
+        "legitimacy": "Official Software",
+        "user_trust": "High",
+        "details": "This tool matches international security standards."
+    })
+
+# --- ADMIN COMMANDS ---
+@app.route('/admin/control', methods=['POST'])
+def control_system():
+    target = request.json.get('target') # 'news' or 'tool'
+    if target == 'news': SYSTEM_STATUS["news_engine"] = not SYSTEM_STATUS["news_engine"]
+    if target == 'tool': SYSTEM_STATUS["tool_auditor"] = not SYSTEM_STATUS["tool_auditor"]
+    return jsonify({"status": "Updated"})
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)

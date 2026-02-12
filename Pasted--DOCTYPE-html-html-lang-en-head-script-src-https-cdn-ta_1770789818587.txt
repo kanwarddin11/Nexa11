@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <nav class="bg-white border-b-4 border-yellow-400 p-4 flex justify-between items-center shadow-lg">
+        <h1 class="text-2xl font-black italic tracking-tighter text-slate-800">NeXA <span class="text-yellow-500">TRUTH</span> ENGINE</h1>
+        <div class="space-x-6 font-bold">
+            <a href="/admin" class="hover:text-yellow-600">Admin Login</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-12 text-center">
+        <h2 class="text-5xl font-extrabold mb-4">Kill Fake News with <span class="bg-yellow-300 px-2">AI Precision.</span></h2>
+        <p class="text-slate-500 mb-8 text-lg font-medium">Instant verification, source tracking, and credibility scoring.</p>
+        
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-3xl shadow-2xl border border-slate-100">
+            <textarea id="newsInput" class="w-full p-4 h-40 border-2 border-slate-200 rounded-2xl focus:border-yellow-400 outline-none transition-all" placeholder="Paste news content or link here..."></textarea>
+            <button onclick="analyzeNews()" class="w-full mt-4 bg-yellow-400 hover:bg-black hover:text-white text-black font-black py-4 rounded-2xl text-xl shadow-xl transition-all transform hover:scale-105">
+                VERIFY NOW <i class="fa-solid fa-bolt ml-2"></i>
+            </button>
+        </div>
+
+        <div id="resultArea" class="hidden mt-10 max-w-2xl mx-auto p-6 bg-green-50 rounded-2xl border-2 border-green-200">
+            <h3 class="text-2xl font-bold" id="status">Verifying...</h3>
+            <div class="w-full bg-slate-200 h-4 rounded-full mt-4">
+                <div id="scoreBar" class="bg-yellow-500 h-4 rounded-full" style="width: 0%"></div>
+            </div>
+            <p id="summary" class="mt-4 text-slate-700"></p>
+        </div>
+    </main>
+</body>
+</html>

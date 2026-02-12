@@ -1,0 +1,52 @@
+<div class="bg-white py-16 border-t border-gray-100 overflow-hidden">
+    <h2 class="text-center text-[#FFCC00] font-black italic mb-10 text-3xl uppercase tracking-tighter">
+        Verified NeXA Partners
+    </h2>
+
+    <div class="flex gap-10 animate-infinite-scroll">
+        <a href="https://gemini.google.com" target="_blank" class="min-w-[300px] bg-white border border-gray-200 rounded-[40px] p-8 shadow-sm hover:shadow-xl transition-all group relative">
+            <div class="absolute top-4 right-6 text-blue-500 text-xl"><i class="fa-solid fa-certificate"></i></div>
+            <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d473530393318eafad1d.svg" class="w-12 mx-auto mb-4">
+            <h4 class="text-center font-bold text-gray-800">Google Gemini</h4>
+            <p class="text-[10px] text-gray-400 text-center mt-1">Official Neural Processing Partner</p>
+            <div class="mt-6 bg-[#1877F2] text-white py-3 rounded-2xl text-[12px] font-black text-center uppercase shadow-md">
+                <i class="fa-solid fa-circle-check mr-2"></i> Official Partner
+            </div>
+        </a>
+
+        <a href="https://openai.com/sora" target="_blank" class="min-w-[300px] bg-white border border-gray-200 rounded-[40px] p-8 shadow-sm hover:shadow-xl transition-all group relative">
+            <div class="absolute top-4 right-6 text-blue-500 text-xl"><i class="fa-solid fa-certificate"></i></div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" class="w-12 mx-auto mb-4 grayscale group-hover:grayscale-0">
+            <h4 class="text-center font-bold text-gray-800">OpenAI Sora</h4>
+            <p class="text-[10px] text-gray-400 text-center mt-1">Authorized Video Intelligence</p>
+            <div class="mt-6 bg-[#1877F2] text-white py-3 rounded-2xl text-[12px] font-black text-center uppercase shadow-md">
+                <i class="fa-solid fa-circle-check mr-2"></i> Official Partner
+            </div>
+        </a>
+
+        <a href="https://llama.meta.com" target="_blank" class="min-w-[300px] bg-white border border-gray-200 rounded-[40px] p-8 shadow-sm hover:shadow-xl transition-all group relative">
+            <div class="absolute top-4 right-6 text-blue-500 text-xl"><i class="fa-solid fa-certificate"></i></div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" class="w-12 mx-auto mb-4">
+            <h4 class="text-center font-bold text-gray-800">Meta Llama 3</h4>
+            <p class="text-[10px] text-gray-400 text-center mt-1">Certified Open Intelligence</p>
+            <div class="mt-6 bg-[#1877F2] text-white py-3 rounded-2xl text-[12px] font-black text-center uppercase shadow-md">
+                <i class="fa-solid fa-circle-check mr-2"></i> Official Partner
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.animate-infinite-scroll {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+.animate-infinite-scroll:hover {
+    animation-play-state: paused;
+}
+</style>

@@ -1,0 +1,27 @@
+<body class="bg-slate-900 text-white font-sans">
+    <nav class="p-6 border-b border-yellow-500/30 flex justify-between bg-black">
+        <div class="text-3xl font-black text-yellow-400">NeXA <span class="text-white">TRUTH</span></div>
+    </nav>
+
+    <div class="container mx-auto py-20 px-4">
+        <h1 class="text-5xl font-black text-center mb-16">Global <span class="text-yellow-400">Intelligence</span> Hub</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="bg-white/5 p-10 rounded-[40px] border border-white/10 hover:border-yellow-400 transition">
+                <h2 class="text-3xl font-bold mb-4 text-yellow-400">News Verifier</h2>
+                <p class="text-slate-400 mb-6">Verify any news claim or link instantly.</p>
+                <textarea id="newsInput" class="w-full bg-black/50 p-4 rounded-2xl h-32 border border-white/10 mb-4 outline-none focus:border-yellow-400" placeholder="Paste news text..."></textarea>
+                <button onclick="verifyNews()" class="w-full bg-yellow-400 text-black font-black py-4 rounded-2xl hover:bg-white transition">EXECUTE NEWS SCAN</button>
+            </div>
+
+            <div class="bg-white/5 p-10 rounded-[40px] border border-white/10 hover:border-yellow-400 transition">
+                <h2 class="text-3xl font-bold mb-4 text-yellow-400">Tool Auditor</h2>
+                <p class="text-slate-400 mb-6">Audit any AI tool or Software link for safety.</p>
+                <input id="toolInput" class="w-full bg-black/50 p-4 rounded-2xl border border-white/10 mb-4 outline-none focus:border-yellow-400" placeholder="https://tool-link.com">
+                <button onclick="auditTool()" class="w-full bg-white text-black font-black py-4 rounded-2xl hover:bg-yellow-400 transition">AUDIT TOOL SAFETY</button>
+            </div>
+        </div>
+        
+        <div id="resultDisplay" class="hidden mt-10 p-10 bg-yellow-400 text-black rounded-[40px] font-bold text-2xl text-center"></div>
+    </div>
+</body>

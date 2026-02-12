@@ -1,0 +1,74 @@
+import json
+import datetime
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
+
+app = Flask(__name__)
+app.secret_key = "nexa_11_global_visionary_2026"
+
+# --- GLOBAL SYSTEM DATA ---
+SYSTEM_SETTINGS = {
+    "admin_pass": "NeXA786",
+    "news_engine": True,
+    "tool_auditor": True,
+    "paywall_active": False,
+    "ppc_rate": 0.50
+}
+
+# Databases
+inquiries = [] # For Contact Form
+verified_tools = [
+    {"id": 1, "name": "Gemini Pro", "link": "https://gemini.google.com", "clicks": 0, "status": "Verified"},
+    {"id": 2, "name": "OpenAI Sora", "link": "https://openai.com/sora", "clicks": 0, "status": "Verified"}
+]
+
+@app.route('/')
+def home():
+    return render_template('index.html', config=SYSTEM_SETTINGS, tools=verified_tools)
+
+# --- FLOOR: CONTACT & ADVERTISING LOGIC ---
+@app.route('/api/submit-ticket', methods=['POST'])
+def submit_ticket():
+    data = request.form
+    new_entry = {
+        "id": len(inquiries) + 1,
+        "name": data.get('name'),
+        "phone": data.get('phone'),
+        "subject": data.get('subject'),
+        "link": data.get('link'),
+        "message": data.get('message'),
+        "time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    }
+    inquiries.append(new_entry)
+    return "Thank you! NeXA 11 AI team will contact you soon."
+
+# --- FLOOR: GLOBAL PAYMENT & UPGRADE ---
+@app.route('/api/create-checkout-session', methods=['POST'])
+def create_checkout():
+    # Integrate Stripe/PayPal API here for G-Pay & Cards
+    return jsonify({"url": "https://checkout.stripe.com/pay/session_id", "status": "success"})
+
+# --- FLOOR: CLICK TRACKING & REVENUE ---
+@app.route('/track-click/<int:tool_id>')
+def track_click(tool_id):
+    for tool in verified_tools:
+        if tool['id'] == tool_id:
+            tool['clicks'] += 1
+            return redirect(tool['link'])
+    return redirect(url_for('home'))
+
+# --- ADMIN COMMAND CENTER ---
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        if request.form['password'] == SYSTEM_SETTINGS['admin_pass']:
+            session['logged_in'] = True
+            return redirect(url_for('admin_portal'))
+    return render_template('login.html')
+
+@app.route('/admin')
+def admin_portal():
+    if not session.get('logged_in'): return redirect('/login')
+    return render_template('admin.html', config=SYSTEM_SETTINGS, inquiries=inquiries, tools=verified_tools)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)

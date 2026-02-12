@@ -1,0 +1,84 @@
+{
+  "system_identity": {
+    "brand_name": "NeXA 11 AI",
+    "founder": {
+      "name": "KANWAR SALLAUHUDDIN ALI KHAN",
+      "designation": "Founder & Visionary Lead",
+      "profile_status": "ON",
+      "persistent_lock": true
+    }
+  },
+  "pricing_tiers": {
+    "basic_plan": {
+      "name": "Basic",
+      "price": "$0",
+      "features": [
+        "Live Web Audit Indicators (✔/✖)",
+        "Basic Safety Rating (A, B, C)",
+        "Public Access to Results"
+      ],
+      "pdf_access": false
+    },
+    "starter_plan": {
+      "name": "Starter",
+      "price": "$10",
+      "features": [
+        "All Basic Features",
+        "AI News Summaries (Single Paragraph)",
+        "Tool Platform Availability Check",
+        "Google Play/App Store Status"
+      ],
+      "pdf_access": false
+    },
+    "pure_plan": {
+      "name": "Pure (Most Popular)",
+      "price": "$25",
+      "features": [
+        "All Starter Features",
+        "Market Worth & Commercial Value",
+        "Current Sales Status & Pricing Packages",
+        "Viral History Tracking (Original Year & Channel)",
+        "Deep Sentiment Analysis"
+      ],
+      "pdf_access": false
+    },
+    "elite_plan": {
+      "name": "Elite (Enterprise)",
+      "price": "$49",
+      "features": [
+        "All Pure Features",
+        "Full Global Traffic Metrics",
+        "User Reach & Demographic Data",
+        "Deep Web Audit (Scam & Malware Scan)",
+        "Official NeXA PDF Download (Mirror UI)",
+        "Triple Plus (+++) Verified Badge"
+      ],
+      "pdf_access": true
+    }
+  },
+  "audit_parameters": {
+    "news_intelligence": {
+      "origin_trace": "Year & First Source Identification",
+      "spread_map": "Platform-wise Viral Tracking",
+      "repost_check": "Detection of Old vs New Content",
+      "ai_summary": "Core Message & Hidden Motives Extraction"
+    },
+    "tool_intelligence": {
+      "safety_grading": "AAA+++ to F (Danger) Scale",
+      "commercial_audit": "Pricing, Value, & Market Worth",
+      "technical_audit": "Data Privacy, Permissions, & Server Location",
+      "usability_audit": "Efficiency Ratio & Community Success Rate"
+    }
+  },
+  "visual_design_specs": {
+    "theme": "White Background / Yellow & Black Branding",
+    "pdf_style": "Mirror UI (Identical to Web Dashboard)",
+    "partner_slider": "Infinite Loop / Official HD Logos / Clickable Redirects",
+    "footer": "Dynamic Domain-specific / Verified by NeXA 11 AI"
+  },
+  "legal_compliance": {
+    "google_policy_page": "ACTIVE (Toggle-able)",
+    "report_authority": "AI-Generated / Anonymous Founder Name on PDF",
+    "data_locking": "Persistent JSON Saving (No Margins)"
+  }
+}

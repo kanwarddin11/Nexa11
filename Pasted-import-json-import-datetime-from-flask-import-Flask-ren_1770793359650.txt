@@ -1,0 +1,72 @@
+import json
+import datetime
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
+
+app = Flask(__name__)
+app.secret_key = "nexa_11_global_visionary_key"
+
+# --- GLOBAL CONFIGURATION HUB (Managed via Admin) ---
+SYSTEM_SETTINGS = {
+    "active_engine": "Google Gemini",
+    "gemini_key": "YOUR_GEMINI_KEY",
+    "openai_key": "",
+    "paywall_active": False,  # Toggle for Packages (On/Off)
+    "policy_content": "Standard NeXA Truth Global Data Protection Policy.",
+    "pricing": {"Basic": 0, "Pro": 9.99, "Enterprise": 49.99}
+}
+
+# --- SECURITY FLOOR ---
+ADMIN_USER = "Admin"
+ADMIN_PASS = "NeXA786" # Your Password
+
+@app.route('/')
+def home():
+    return render_template('index.html', config=SYSTEM_SETTINGS)
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        if request.form['username'] == ADMIN_USER and request.form['password'] == ADMIN_PASS:
+            session['logged_in'] = True
+            return redirect(url_for('admin_portal'))
+        return "Invalid Credentials"
+    return render_template('login.html')
+
+@app.route('/admin')
+def admin_portal():
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
+    return render_template('admin.html', config=SYSTEM_SETTINGS)
+
+# --- FLOOR: PAYMENT & ACCESS CONTROL ---
+@app.route('/admin/toggle_paywall', methods=['POST'])
+def toggle_paywall():
+    SYSTEM_SETTINGS['paywall_active'] = not SYSTEM_SETTINGS['paywall_active']
+    return jsonify({"status": "Success", "is_active": SYSTEM_SETTINGS['paywall_active']})
+
+# --- FLOOR: CORE AI VERIFICATION ENGINE ---
+@app.route('/api/verify', methods=['POST'])
+def verify_engine():
+    data = request.json
+    user_input = data.get('input_data', '')
+    
+    # Logic: Analyze URL or Text
+    analysis_type = "Link Extraction" if user_input.startswith('http') else "Direct Fact Check"
+    
+    # Dynamic Response Based on SOPs
+    result = {
+        "verdict": "Verified Authentic", # Real or Fake
+        "score": 98,
+        "origin": "Global Press Archives",
+        "timestamp": datetime.datetime.now().strftime("%B %d, %Y"),
+        "analysis": analysis_type
+    }
+    return jsonify(result)
+
+# --- FLOOR: SEO SITEMAP ---
+@app.route('/sitemap.xml')
+def sitemap():
+    return "<?xml version='1.0' encoding='UTF-8'?><urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'></urlset>"
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)

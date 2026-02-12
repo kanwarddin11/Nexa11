@@ -1,0 +1,72 @@
+import json
+import datetime
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
+
+app = Flask(__name__)
+app.secret_key = "nexa_global_visionary_2026"
+
+# FLOOR 3: INTEGRATION HUB (API Settings)
+API_CONFIG = {
+    "active_engine": "Google Gemini",
+    "api_key": "YOUR_GEMINI_KEY",
+    "status": "Production"
+}
+
+# FLOOR 2: SECURITY LAYER
+ADMIN_USER = "Admin"
+ADMIN_PASS = "NeXA786"
+
+# Verification Log for SEO & Admin
+verification_ledger = []
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        if request.form['username'] == ADMIN_USER and request.form['password'] == ADMIN_PASS:
+            session['logged_in'] = True
+            return redirect(url_for('admin_portal'))
+        return "Access Denied: Invalid Credentials"
+    return render_template('login.html')
+
+@app.route('/admin')
+def admin_portal():
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
+    return render_template('admin.html', config=API_CONFIG, logs=verification_ledger)
+
+@app.route('/api/verify', methods=['POST'])
+def verify_engine():
+    data = request.json
+    user_input = data.get('input_data', '')
+    
+    # FLOOR 4: SEO & ANALYSIS LOGIC
+    # Identify if URL or Text
+    input_type = "URL" if user_input.startswith('http') else "Text Statement"
+    
+    # Mock Response (Connect your API keys here)
+    result = {
+        "verdict": "Verified Authentic",
+        "trust_score": 98,
+        "origin": "Official Documentation",
+        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "id": len(verification_ledger) + 1
+    }
+    
+    # Add to Ledger for Admin and SEO
+    verification_ledger.append({"query": user_input[:50], "status": result['verdict']})
+    
+    return jsonify(result)
+
+# FLOOR 5: SITEMAP GENERATOR (Automatic SEO)
+@app.route('/sitemap.xml')
+def sitemap():
+    pages = []
+    # Logic to auto-generate URLs for Google Crawler
+    return "<?xml version='1.0' encoding='UTF-8'?><urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'></urlset>"
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)
